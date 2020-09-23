@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 export default function Login() {
   const [user, setUser] = useState("");
-  const [message, setMessage] = useState(false);
 
   return (
     <div className="login-container">
@@ -34,7 +33,6 @@ export default function Login() {
             <input type="checkbox" />
             <label>Remember this device</label>
           </div>
-          {message ? <div>Please enter valid email</div> : undefined}
           <button
             disabled={user.length < 1}
             className="login-container__content--btn"
