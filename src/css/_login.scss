@@ -4,12 +4,16 @@ $border-color: #eaeaea;
 $label-color: #6d6d6d;
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em; // 1200px
-$bp-large: 62.5em; // 1000px
+// $bp-largest: 75em; // 1200px
+// $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px;
-$bp-small: 37.5em; // 600px;
+// $bp-small: 37.5em; // 600px;
 
 .login-container {
+  @media only screen and (max-width: $bp-medium) {
+    width: 35rem;
+  }
+
   border: 2px solid #f7f7f7;
   border-radius: 2px;
   display: inline-block;
