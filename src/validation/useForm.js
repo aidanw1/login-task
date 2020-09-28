@@ -35,8 +35,6 @@ const useForm = (
       setIsSubmitting(true);
     }
 
-    setValues("");
-
     if (values.email !== "") {
       alert(`${values.email} has logged in`);
     }
