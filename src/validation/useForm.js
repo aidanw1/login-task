@@ -39,6 +39,8 @@ const useForm = (
       alert(`${values.email} has logged in`);
     }
 
+    setValues("");
+
     localStorage.setItem("rememberMe", rememberMe);
     localStorage.setItem("email", rememberMe ? values.email : "");
   };
